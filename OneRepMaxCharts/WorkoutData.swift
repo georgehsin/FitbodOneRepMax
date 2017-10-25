@@ -25,7 +25,7 @@ final class WorkoutData {
             do {
                 let data = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
                 
-                let lines = data.components(separatedBy: "\r\n")
+                let lines = data.components(separatedBy: .newlines)
                 for line in lines {
                     let set = line.components(separatedBy: ",")
                     if set.count < 5 {
