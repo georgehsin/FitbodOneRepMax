@@ -16,7 +16,6 @@ class OneRepMaxTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.tableFooterView = UIView()
         DispatchQueue.global(qos: .background).async {
             WorkoutData.sharedInstance.getWorkoutData { (returnedData, exercises) in
                 self.oneRepMaxData = returnedData
@@ -25,17 +24,11 @@ class OneRepMaxTableViewController: UITableViewController {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        }        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        }
+        tableView.tableFooterView = UIView()
     }
 
     // MARK: - Table view data source
-
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return oneRepMaxData.count

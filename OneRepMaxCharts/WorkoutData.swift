@@ -35,17 +35,19 @@ final class WorkoutData {
                     if dictData.keys.contains(set[1]) {
                         // if dictionary contains the exercise, calculate and compare one rep max for global and for date
                         if dictData[set[1]]!.last!.0 == set[0] {
-                            //check if date max for date is greater
+                            //check if date max for date exists and if it is greater
                             let last = dictData[set[1]]!.count - 1
                             if dictData[set[1]]!.last!.1 < oneRepMax{
                                 dictData[set[1]]![last].1 = oneRepMax
                             }
                         }
                         else {
+                            //if date does not yet exists, push (date, oneRepMax) tuple into exercise array
                             dictData[set[1]]!.append((set[0], oneRepMax))
                         }
                         
                         if dictData[set[1]]![0].1 < oneRepMax {
+                            //check if exercise current set max is greater than overall exercise max
                             dictData[set[1]]![0].1 = oneRepMax
                         }
                         
@@ -56,7 +58,6 @@ final class WorkoutData {
                         dictData[set[1]] = []
                         dictData[set[1]]!.append(("max", oneRepMax))
                         dictData[set[1]]!.append((set[0], oneRepMax))
-                        //what if I only do that exercise once for that day
                     }
                 }
                 completion(dictData, exercises)

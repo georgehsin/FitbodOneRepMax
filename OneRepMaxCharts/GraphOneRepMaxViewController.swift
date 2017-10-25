@@ -15,7 +15,6 @@ class GraphOneRepMaxViewController: UIViewController {
     @IBOutlet weak var exerciseAllTimeMax: UILabel!
     @IBOutlet weak var lineChartView: UIView!
     weak var axisFormatDelegate: IAxisValueFormatter?
-    
     var exercise: String!
     
     override func viewDidLoad() {
@@ -27,13 +26,6 @@ class GraphOneRepMaxViewController: UIViewController {
         exerciseAllTimeMax.text = String(graphOneRepMaxData![0].1)
         exerciseNameLabel.text = exercise!
         axisFormatDelegate = self
-        
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func createLineChart(lineData: [(String, Int)], chart: LineChartView) {
