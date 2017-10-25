@@ -26,7 +26,6 @@ class GraphOneRepMaxViewController: UIViewController {
         }
         exerciseAllTimeMax.text = String(graphOneRepMaxData![0].1)
         exerciseNameLabel.text = exercise!
-        setChartUI(chart: lineChartView as! LineChartView)
         axisFormatDelegate = self
         
         // Do any additional setup after loading the view.
@@ -35,33 +34,6 @@ class GraphOneRepMaxViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func setChartUI(chart: LineChartView) {
-        chart.leftAxis.drawGridLinesEnabled = false
-        chart.leftAxis.drawAxisLineEnabled = false
-        chart.rightAxis.drawAxisLineEnabled = false
-        chart.rightAxis.drawGridLinesEnabled = false
-        chart.xAxis.drawGridLinesEnabled = false
-        chart.xAxis.drawAxisLineEnabled = false
-        chart.drawGridBackgroundEnabled = false
-        chart.xAxis.labelTextColor = UIColor.white
-        chart.doubleTapToZoomEnabled = false
-        chart.pinchZoomEnabled = false
-        chart.dragEnabled = false
-        chart.drawGridBackgroundEnabled = false
-        chart.xAxis.labelPosition = XAxis.LabelPosition.bottom
-        chart.legend.enabled = false
-        chart.xAxis.enabled = false
-        
-//        chart.rightAxis.granularity = Double(exerciseAllTimeMax.text!)!
-        chart.rightAxis.drawLabelsEnabled = false
-//        chart.rightAxis.drawTopYLabelEntryEnabled = true
-//        chart.rightAxis.drawBottomYLabelEntryEnabled = true
-        chart.rightAxis.labelCount = 2
-        chart.rightAxis.labelPosition = YAxis.LabelPosition.insideChart
-        chart.rightAxis.labelTextColor = UIColor.white
-        
     }
     
     func createLineChart(lineData: [(String, Int)], chart: LineChartView) {
@@ -86,9 +58,29 @@ class GraphOneRepMaxViewController: UIViewController {
         chartDataSet.circleHoleRadius = 2.0
         
         let chartData = LineChartData(dataSet: chartDataSet)
-        chart.data = chartData
         chart.xAxis.valueFormatter = axisFormatDelegate
-        chart.xAxis.enabled = true
+
+        chart.leftAxis.drawGridLinesEnabled = false
+        chart.leftAxis.drawAxisLineEnabled = false
+        chart.rightAxis.drawAxisLineEnabled = false
+        chart.rightAxis.drawGridLinesEnabled = false
+        chart.xAxis.drawGridLinesEnabled = false
+        chart.xAxis.drawAxisLineEnabled = false
+        chart.drawGridBackgroundEnabled = false
+        chart.xAxis.labelTextColor = UIColor.white
+        chart.doubleTapToZoomEnabled = false
+        chart.pinchZoomEnabled = false
+        chart.dragEnabled = false
+        chart.drawGridBackgroundEnabled = false
+        chart.xAxis.labelPosition = XAxis.LabelPosition.bottom
+        chart.legend.enabled = false
+        
+        chart.rightAxis.labelCount = 4
+        chart.rightAxis.drawTopYLabelEntryEnabled = true
+        chart.rightAxis.drawBottomYLabelEntryEnabled = true
+        chart.rightAxis.labelPosition = YAxis.LabelPosition.outsideChart
+        chart.rightAxis.labelTextColor = UIColor.white
+        chart.data = chartData
     }
 
 }
