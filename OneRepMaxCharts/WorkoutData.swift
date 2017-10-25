@@ -21,12 +21,9 @@ final class WorkoutData {
     
     func getWorkoutData(completion: ([String:[(String, Int)]], [String]) -> ()) {
         let bundle = Bundle.main
-        let path = bundle.path(forResource: "workoutData", ofType: "txt")
-        
-        let filemgr = FileManager.default
-        if filemgr.fileExists(atPath: path!) {
+        if let path = bundle.path(forResource: "workoutData", ofType: "txt") {
             do {
-                let data = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+                let data = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
                 
                 let lines = data.components(separatedBy: "\r\n")
                 for line in lines {
@@ -47,11 +44,11 @@ final class WorkoutData {
                         else {
                             dictData[set[1]]!.append((set[0], oneRepMax))
                         }
-
+                        
                         if dictData[set[1]]![0].1 < oneRepMax {
                             dictData[set[1]]![0].1 = oneRepMax
                         }
-
+                        
                     }
                     else {
                         // if dictionary does not contain the exercise, calculate one rep max, and set it for global and for date
@@ -66,6 +63,10 @@ final class WorkoutData {
             } catch let error as NSError {
                 NSLog("OneRepMaxTableController - Error: \(error)")
             }
+        
+        }
+        else {
+            print("No Data Found - please add data.txt file")
         }
     }
 

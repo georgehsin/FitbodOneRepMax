@@ -15,7 +15,6 @@
 		A651E93A1F9EA2E30087C3D6 /* OneRepMaxChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9391F9EA2E30087C3D6 /* OneRepMaxChartsTests.swift */; };
 		A651E9451F9EA5700087C3D6 /* WorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9441F9EA5700087C3D6 /* WorkoutData.swift */; };
 		A651E9491F9EA6360087C3D6 /* OneRepMaxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9481F9EA6360087C3D6 /* OneRepMaxTableViewController.swift */; };
-		A651E94B1F9EE0C80087C3D6 /* workoutData.txt in Resources */ = {isa = PBXBuildFile; fileRef = A651E94A1F9EE0C80087C3D6 /* workoutData.txt */; };
 		A651E94F1F9EF00B0087C3D6 /* OneRepMaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E94E1F9EF00B0087C3D6 /* OneRepMaxCell.swift */; };
 		A651E9511F9F078D0087C3D6 /* GraphOneRepMaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9501F9F078D0087C3D6 /* GraphOneRepMaxViewController.swift */; };
 		BD06BB993ADD33A6629618F6 /* Pods_OneRepMaxChartsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F2166D554FCA8057AB2669 /* Pods_OneRepMaxChartsTests.framework */; };
@@ -46,7 +45,6 @@
 		A651E93B1F9EA2E30087C3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A651E9441F9EA5700087C3D6 /* WorkoutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutData.swift; sourceTree = "<group>"; };
 		A651E9481F9EA6360087C3D6 /* OneRepMaxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxTableViewController.swift; sourceTree = "<group>"; };
-		A651E94A1F9EE0C80087C3D6 /* workoutData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = workoutData.txt; path = ../../../../../Downloads/workoutData.txt; sourceTree = "<group>"; };
 		A651E94E1F9EF00B0087C3D6 /* OneRepMaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxCell.swift; sourceTree = "<group>"; };
 		A651E9501F9F078D0087C3D6 /* GraphOneRepMaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphOneRepMaxViewController.swift; sourceTree = "<group>"; };
 		BF0546EA89930F934FBEBE9C /* Pods-OneRepMaxChartsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneRepMaxChartsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneRepMaxChartsTests/Pods-OneRepMaxChartsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 		A651E9231F9EA2E30087C3D6 /* OneRepMaxCharts */ = {
 			isa = PBXGroup;
 			children = (
-				A651E94A1F9EE0C80087C3D6 /* workoutData.txt */,
 				A651E9441F9EA5700087C3D6 /* WorkoutData.swift */,
 				A651E9241F9EA2E30087C3D6 /* AppDelegate.swift */,
 				A651E9281F9EA2E30087C3D6 /* Main.storyboard */,
@@ -231,7 +228,6 @@
 			files = (
 				A651E92F1F9EA2E30087C3D6 /* LaunchScreen.storyboard in Resources */,
 				A651E92C1F9EA2E30087C3D6 /* Assets.xcassets in Resources */,
-				A651E94B1F9EE0C80087C3D6 /* workoutData.txt in Resources */,
 				A651E92A1F9EA2E30087C3D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
