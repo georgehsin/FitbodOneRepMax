@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0518FDE8DF3ABB4CF4DD10D9 /* Pods_OneRepMaxCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545038FD2A827D3173D1910E /* Pods_OneRepMaxCharts.framework */; };
+		A651E9251F9EA2E30087C3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9241F9EA2E30087C3D6 /* AppDelegate.swift */; };
+		A651E92A1F9EA2E30087C3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A651E9281F9EA2E30087C3D6 /* Main.storyboard */; };
+		A651E92C1F9EA2E30087C3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A651E92B1F9EA2E30087C3D6 /* Assets.xcassets */; };
+		A651E92F1F9EA2E30087C3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A651E92D1F9EA2E30087C3D6 /* LaunchScreen.storyboard */; };
+		A651E93A1F9EA2E30087C3D6 /* OneRepMaxChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9391F9EA2E30087C3D6 /* OneRepMaxChartsTests.swift */; };
+		A651E9451F9EA5700087C3D6 /* WorkoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9441F9EA5700087C3D6 /* WorkoutData.swift */; };
+		A651E9491F9EA6360087C3D6 /* OneRepMaxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9481F9EA6360087C3D6 /* OneRepMaxTableViewController.swift */; };
+		A651E94B1F9EE0C80087C3D6 /* workoutData.txt in Resources */ = {isa = PBXBuildFile; fileRef = A651E94A1F9EE0C80087C3D6 /* workoutData.txt */; };
+		A651E94F1F9EF00B0087C3D6 /* OneRepMaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E94E1F9EF00B0087C3D6 /* OneRepMaxCell.swift */; };
+		A651E9511F9F078D0087C3D6 /* GraphOneRepMaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A651E9501F9F078D0087C3D6 /* GraphOneRepMaxViewController.swift */; };
+		BD06BB993ADD33A6629618F6 /* Pods_OneRepMaxChartsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F2166D554FCA8057AB2669 /* Pods_OneRepMaxChartsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A651E9361F9EA2E30087C3D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A651E9191F9EA2E30087C3D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A651E9201F9EA2E30087C3D6;
+			remoteInfo = OneRepMaxCharts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52F2166D554FCA8057AB2669 /* Pods_OneRepMaxChartsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneRepMaxChartsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		545038FD2A827D3173D1910E /* Pods_OneRepMaxCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneRepMaxCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		945892A8CBC6CC954A264F32 /* Pods-OneRepMaxChartsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneRepMaxChartsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneRepMaxChartsTests/Pods-OneRepMaxChartsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A651E9211F9EA2E30087C3D6 /* OneRepMaxCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneRepMaxCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A651E9241F9EA2E30087C3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A651E9291F9EA2E30087C3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A651E92B1F9EA2E30087C3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A651E92E1F9EA2E30087C3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A651E9301F9EA2E30087C3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A651E9351F9EA2E30087C3D6 /* OneRepMaxChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneRepMaxChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A651E9391F9EA2E30087C3D6 /* OneRepMaxChartsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxChartsTests.swift; sourceTree = "<group>"; };
+		A651E93B1F9EA2E30087C3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A651E9441F9EA5700087C3D6 /* WorkoutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutData.swift; sourceTree = "<group>"; };
+		A651E9481F9EA6360087C3D6 /* OneRepMaxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxTableViewController.swift; sourceTree = "<group>"; };
+		A651E94A1F9EE0C80087C3D6 /* workoutData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = workoutData.txt; path = ../../../../../Downloads/workoutData.txt; sourceTree = "<group>"; };
+		A651E94E1F9EF00B0087C3D6 /* OneRepMaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxCell.swift; sourceTree = "<group>"; };
+		A651E9501F9F078D0087C3D6 /* GraphOneRepMaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphOneRepMaxViewController.swift; sourceTree = "<group>"; };
+		BF0546EA89930F934FBEBE9C /* Pods-OneRepMaxChartsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneRepMaxChartsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneRepMaxChartsTests/Pods-OneRepMaxChartsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5125D0F76CC54E6026B59F7 /* Pods-OneRepMaxCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneRepMaxCharts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneRepMaxCharts/Pods-OneRepMaxCharts.debug.xcconfig"; sourceTree = "<group>"; };
+		F49EC93CFA2FF1BBD0C76405 /* Pods-OneRepMaxCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneRepMaxCharts.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneRepMaxCharts/Pods-OneRepMaxCharts.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A651E91E1F9EA2E30087C3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0518FDE8DF3ABB4CF4DD10D9 /* Pods_OneRepMaxCharts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A651E9321F9EA2E30087C3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD06BB993ADD33A6629618F6 /* Pods_OneRepMaxChartsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FFBCCD592FCF33B0773D308 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545038FD2A827D3173D1910E /* Pods_OneRepMaxCharts.framework */,
+				52F2166D554FCA8057AB2669 /* Pods_OneRepMaxChartsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95C0AF776ECC9436637F4B84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5125D0F76CC54E6026B59F7 /* Pods-OneRepMaxCharts.debug.xcconfig */,
+				F49EC93CFA2FF1BBD0C76405 /* Pods-OneRepMaxCharts.release.xcconfig */,
+				945892A8CBC6CC954A264F32 /* Pods-OneRepMaxChartsTests.debug.xcconfig */,
+				BF0546EA89930F934FBEBE9C /* Pods-OneRepMaxChartsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A651E9181F9EA2E30087C3D6 = {
+			isa = PBXGroup;
+			children = (
+				A651E9231F9EA2E30087C3D6 /* OneRepMaxCharts */,
+				A651E9381F9EA2E30087C3D6 /* OneRepMaxChartsTests */,
+				A651E9221F9EA2E30087C3D6 /* Products */,
+				95C0AF776ECC9436637F4B84 /* Pods */,
+				1FFBCCD592FCF33B0773D308 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A651E9221F9EA2E30087C3D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A651E9211F9EA2E30087C3D6 /* OneRepMaxCharts.app */,
+				A651E9351F9EA2E30087C3D6 /* OneRepMaxChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A651E9231F9EA2E30087C3D6 /* OneRepMaxCharts */ = {
+			isa = PBXGroup;
+			children = (
+				A651E94A1F9EE0C80087C3D6 /* workoutData.txt */,
+				A651E9441F9EA5700087C3D6 /* WorkoutData.swift */,
+				A651E9241F9EA2E30087C3D6 /* AppDelegate.swift */,
+				A651E9281F9EA2E30087C3D6 /* Main.storyboard */,
+				A651E92B1F9EA2E30087C3D6 /* Assets.xcassets */,
+				A651E92D1F9EA2E30087C3D6 /* LaunchScreen.storyboard */,
+				A651E9301F9EA2E30087C3D6 /* Info.plist */,
+				A651E9481F9EA6360087C3D6 /* OneRepMaxTableViewController.swift */,
+				A651E9501F9F078D0087C3D6 /* GraphOneRepMaxViewController.swift */,
+				A651E94E1F9EF00B0087C3D6 /* OneRepMaxCell.swift */,
+			);
+			path = OneRepMaxCharts;
+			sourceTree = "<group>";
+		};
+		A651E9381F9EA2E30087C3D6 /* OneRepMaxChartsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A651E9391F9EA2E30087C3D6 /* OneRepMaxChartsTests.swift */,
+				A651E93B1F9EA2E30087C3D6 /* Info.plist */,
+			);
+			path = OneRepMaxChartsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A651E9201F9EA2E30087C3D6 /* OneRepMaxCharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A651E93E1F9EA2E30087C3D6 /* Build configuration list for PBXNativeTarget "OneRepMaxCharts" */;
+			buildPhases = (
+				1DF587242C1ED4BB08CBF791 /* [CP] Check Pods Manifest.lock */,
+				A651E91D1F9EA2E30087C3D6 /* Sources */,
+				A651E91E1F9EA2E30087C3D6 /* Frameworks */,
+				A651E91F1F9EA2E30087C3D6 /* Resources */,
+				3A3378FD07CA7FCD8B3C7A24 /* [CP] Embed Pods Frameworks */,
+				535C6FB8ECBB2962807E152D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneRepMaxCharts;
+			productName = OneRepMaxCharts;
+			productReference = A651E9211F9EA2E30087C3D6 /* OneRepMaxCharts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A651E9341F9EA2E30087C3D6 /* OneRepMaxChartsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A651E9411F9EA2E30087C3D6 /* Build configuration list for PBXNativeTarget "OneRepMaxChartsTests" */;
+			buildPhases = (
+				EDFC99424618ECBCA182D95A /* [CP] Check Pods Manifest.lock */,
+				A651E9311F9EA2E30087C3D6 /* Sources */,
+				A651E9321F9EA2E30087C3D6 /* Frameworks */,
+				A651E9331F9EA2E30087C3D6 /* Resources */,
+				F457D07740280DC724B47526 /* [CP] Embed Pods Frameworks */,
+				037775AF735012CD43C7F263 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A651E9371F9EA2E30087C3D6 /* PBXTargetDependency */,
+			);
+			name = OneRepMaxChartsTests;
+			productName = OneRepMaxChartsTests;
+			productReference = A651E9351F9EA2E30087C3D6 /* OneRepMaxChartsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A651E9191F9EA2E30087C3D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = georgehsin;
+				TargetAttributes = {
+					A651E9201F9EA2E30087C3D6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					A651E9341F9EA2E30087C3D6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A651E9201F9EA2E30087C3D6;
+					};
+				};
+			};
+			buildConfigurationList = A651E91C1F9EA2E30087C3D6 /* Build configuration list for PBXProject "OneRepMaxCharts" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A651E9181F9EA2E30087C3D6;
+			productRefGroup = A651E9221F9EA2E30087C3D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A651E9201F9EA2E30087C3D6 /* OneRepMaxCharts */,
+				A651E9341F9EA2E30087C3D6 /* OneRepMaxChartsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A651E91F1F9EA2E30087C3D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A651E92F1F9EA2E30087C3D6 /* LaunchScreen.storyboard in Resources */,
+				A651E92C1F9EA2E30087C3D6 /* Assets.xcassets in Resources */,
+				A651E94B1F9EE0C80087C3D6 /* workoutData.txt in Resources */,
+				A651E92A1F9EA2E30087C3D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A651E9331F9EA2E30087C3D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		037775AF735012CD43C7F263 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneRepMaxChartsTests/Pods-OneRepMaxChartsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DF587242C1ED4BB08CBF791 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A3378FD07CA7FCD8B3C7A24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneRepMaxCharts/Pods-OneRepMaxCharts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		535C6FB8ECBB2962807E152D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneRepMaxCharts/Pods-OneRepMaxCharts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDFC99424618ECBCA182D95A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F457D07740280DC724B47526 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneRepMaxChartsTests/Pods-OneRepMaxChartsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A651E91D1F9EA2E30087C3D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A651E9491F9EA6360087C3D6 /* OneRepMaxTableViewController.swift in Sources */,
+				A651E94F1F9EF00B0087C3D6 /* OneRepMaxCell.swift in Sources */,
+				A651E9251F9EA2E30087C3D6 /* AppDelegate.swift in Sources */,
+				A651E9511F9F078D0087C3D6 /* GraphOneRepMaxViewController.swift in Sources */,
+				A651E9451F9EA5700087C3D6 /* WorkoutData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A651E9311F9EA2E30087C3D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A651E93A1F9EA2E30087C3D6 /* OneRepMaxChartsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A651E9371F9EA2E30087C3D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A651E9201F9EA2E30087C3D6 /* OneRepMaxCharts */;
+			targetProxy = A651E9361F9EA2E30087C3D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A651E9281F9EA2E30087C3D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A651E9291F9EA2E30087C3D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A651E92D1F9EA2E30087C3D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A651E92E1F9EA2E30087C3D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A651E93C1F9EA2E30087C3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A651E93D1F9EA2E30087C3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A651E93F1F9EA2E30087C3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5125D0F76CC54E6026B59F7 /* Pods-OneRepMaxCharts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M66LNW846X;
+				INFOPLIST_FILE = OneRepMaxCharts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = georgehsin.OneRepMaxCharts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A651E9401F9EA2E30087C3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49EC93CFA2FF1BBD0C76405 /* Pods-OneRepMaxCharts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M66LNW846X;
+				INFOPLIST_FILE = OneRepMaxCharts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = georgehsin.OneRepMaxCharts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A651E9421F9EA2E30087C3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945892A8CBC6CC954A264F32 /* Pods-OneRepMaxChartsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M66LNW846X;
+				INFOPLIST_FILE = OneRepMaxChartsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = georgehsin.OneRepMaxChartsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneRepMaxCharts.app/OneRepMaxCharts";
+			};
+			name = Debug;
+		};
+		A651E9431F9EA2E30087C3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0546EA89930F934FBEBE9C /* Pods-OneRepMaxChartsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M66LNW846X;
+				INFOPLIST_FILE = OneRepMaxChartsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = georgehsin.OneRepMaxChartsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneRepMaxCharts.app/OneRepMaxCharts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A651E91C1F9EA2E30087C3D6 /* Build configuration list for PBXProject "OneRepMaxCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A651E93C1F9EA2E30087C3D6 /* Debug */,
+				A651E93D1F9EA2E30087C3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A651E93E1F9EA2E30087C3D6 /* Build configuration list for PBXNativeTarget "OneRepMaxCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A651E93F1F9EA2E30087C3D6 /* Debug */,
+				A651E9401F9EA2E30087C3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A651E9411F9EA2E30087C3D6 /* Build configuration list for PBXNativeTarget "OneRepMaxChartsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A651E9421F9EA2E30087C3D6 /* Debug */,
+				A651E9431F9EA2E30087C3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A651E9191F9EA2E30087C3D6 /* Project object */;
+}
