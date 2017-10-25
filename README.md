@@ -6,3 +6,4 @@ Directions for running application
      - right click oneRepMaxCharts folder on left navbar and select "add files to oneRepMaxCharts"
      - if data filename is different, in WorkoutData.swift in getWorkout(), set variable path, forResource: <"SOMEFILENAME">
 4. open and run project in Xcode
+     - Make sure to run .xcworkspace project
